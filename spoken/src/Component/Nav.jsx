@@ -4,7 +4,7 @@ import './nav.css'
 export const Nav = () => {
   return (
     <>
-    <div className="navabar">
+    <div className="navbar">
         <div className="navlogo">
             <h2>ThisAI</h2>
             <h4>spoken English</h4>
