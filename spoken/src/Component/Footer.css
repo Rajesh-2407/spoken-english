@@ -2,8 +2,8 @@
 .footer{
     width: 100vw;
     font-family: "Poppins", serif;
-    background-color:grey;
-    color: white;
+    background-color:pink;
+    color:black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,42 +14,61 @@
 }
 .foot-ul{
    width: 250px;
-   height: 120px;
-   border: 1px solid black;
+   height: 180px;
 }
 li{
     list-style: none;
 }
+li:hover{
+    color: blueviolet;
+}
 a{
     text-decoration: none;
-    color: white;
+    color:black;
 }
 .heading{
-    color: darkgoldenrod;
+    color: blueviolet;
     font-size: 25px;
+}
+span{
+    height: 45px;
+    width: 45px;
+    border: 1px solid black;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .icon{
     display: flex;
-    flex-direction: column;
+    gap: 15px;
     font-size: 30px;
+
 }
-.icon-one{
+/* .icon-one{
     display: flex;
-    gap: 5px 20px;
+    gap: 0px 20px;
+
 }
 .icon-two{
     display: flex;
-    gap: 5px 20px;
-}
-.icon-one .wa{
+    gap: 0px 20px;
+
+} */
+.icon .wa a{
     color: green;
+    background-color: white;
 }
-.icon-one .insta{
+.icon .insta a{
     color: orangered;
+    background-color: white;
 }
-.icon-two .yt{
+.icon .yt a{
     color: red;
+    background-color: white;
 }
-.icon-two .tw{
+.icon .tw {
     color: blue;
+    background-color: white;
 }
