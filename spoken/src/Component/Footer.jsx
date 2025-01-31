@@ -11,24 +11,24 @@ export const Footer = () => {
     <>
     <div className='footer'>
 
-        <ul>
+        <ul className='foot-ul'>
             <li className='heading'>Address</li>
             <li>3rd,Floor BMC Market,ThisAi</li>
             <li>Books , Thisaiyanvilai,</li>
             <li>Tirunelveli DT-627657</li>
         </ul>
-        <ul >
+        <ul className='foot-ul'>
             <li className='heading'>Our Services</li>
             <li>Speaching</li>
             <li>Writting</li>
             <li>Grammer</li>
         </ul>
-        <ul>
+        <ul className='foot-ul'>
             <li className='heading'>Contact us</li>
             <li><a href=''>&nbsp<FaPhone />+91 6380683086</a></li>
             <li><a href=''>sales@thisaitech.com</a></li>
         </ul>
-        <ul >
+        <ul className='foot-ul'>
             <li className='heading'>Follow</li>
             <div className='icon'>
             <li className='icon-one'>
