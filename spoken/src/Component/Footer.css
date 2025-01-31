@@ -1,3 +1,4 @@
+
 .footer{
     width: 100vw;
     font-family: "Poppins", serif;
@@ -22,6 +23,14 @@ li{
 .heading{
     color: darkgoldenrod;
     font-size: 25px;
+}
+.icon{
+    display: flex;
+    flex-direction: column;
+}
+.icon-one{
+    display: flex;
+    row-gap: 30px;
 }
 span{
     font-size: 30px;
