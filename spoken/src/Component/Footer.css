@@ -2,7 +2,7 @@
 .footer{
     width: 100vw;
     font-family: "Poppins", serif;
-    background-color:pink;
+    background-color:#291A40;
     color:black;
     display: flex;
     flex-wrap: wrap;
@@ -17,10 +17,11 @@
 }
 li{
     list-style: none;
+    color: white;
 }
 a{
     text-decoration: none;
-    color:black;
+    color:white;
 }
 .heading{
     color: blueviolet;
@@ -66,4 +67,17 @@ span{
 .icon .tw {
     color: blue;
     background-color: white;
+}
+.tw:hover{
+    color: white;
+    background-color: blue;
+    transition: 0.5s;
+}
+.icon .yt:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.icon .yt a:hover{
+    color: white;
+    transition: 0.5s;
 }
