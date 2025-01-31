@@ -14,7 +14,7 @@ export const Nav = () => {
                         <li className='nav-li'><a href="">Home</a></li>
                         <li className='nav-li'><a href="">Components</a></li>
                         <li className='nav-li'><a href="">Chat</a></li>
-                        <li className='nav-li'><a href="">Contact</a></li>
+                        <li className='nav-li'><a href="#footer">Contact</a></li>
                     </ul>
                 </div>
                 <div className="navbutton">
