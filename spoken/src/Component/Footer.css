@@ -8,19 +8,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: start;
     gap: 10px;
     padding: 10px;
 }
 .foot-ul{
    width: 250px;
-   height: 180px;
+   height: 120px;
 }
 li{
     list-style: none;
-}
-li:hover{
-    color: blueviolet;
 }
 a{
     text-decoration: none;
@@ -31,9 +27,8 @@ a{
     font-size: 25px;
 }
 span{
-    height: 45px;
-    width: 45px;
-    border: 1px solid black;
+    height: 60px;
+    width: 70px;
     border-radius: 30%;
     display: flex;
     justify-content: center;
@@ -43,30 +38,30 @@ span{
 .icon{
     display: flex;
     gap: 15px;
-    font-size: 30px;
-
+    font-size: 35px;
 }
-/* .icon-one{
-    display: flex;
-    gap: 0px 20px;
 
+.icon .wa {
+    background-color: white;
 }
-.icon-two{
-    display: flex;
-    gap: 0px 20px;
-
-} */
 .icon .wa a{
     color: green;
+    margin-top: 8px;/*alignitem not working so center*/
+}
+.icon .insta {
     background-color: white;
 }
 .icon .insta a{
-    color: orangered;
+    color: orangered; 
+     margin-top: 8px;
+
+}
+.icon .yt{
     background-color: white;
 }
 .icon .yt a{
     color: red;
-    background-color: white;
+    margin-top: 8px;
 }
 .icon .tw {
     color: blue;
