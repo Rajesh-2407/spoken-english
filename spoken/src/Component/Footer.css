@@ -5,9 +5,12 @@
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     /* gap: 20px; */
+}
+ul{
+    padding: 10px;
 }
 li{
     list-style: none;
