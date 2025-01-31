@@ -9,15 +9,15 @@ export const Nav = () => {
             <h4>spoken English</h4>
         </div>
         <div className="navlist">
-            <ul>
-                <li>Home</li>
-                <li>Components</li>
-                <li>Chat</li>
-                <li>Contact</li>
+            <ul className='nav-ul'>
+                <li className='nav-li'>Home</li>
+                <li className='nav-li'>Components</li>
+                <li className='nav-li'>Chat</li>
+                <li className='nav-li'>Contact</li>
             </ul>
         </div>
         <div className="navbutton">
-            <button><a href="">Sign In</a></button>
+            <button className='nav-btn'><a href="">Sign In</a></button>
         </div>
     </div>
     </>
