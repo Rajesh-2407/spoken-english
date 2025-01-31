@@ -4,6 +4,7 @@ import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa6";
+import './Footer.css'
 
 export const Footer = () => {
   return (
