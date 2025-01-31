@@ -30,10 +30,14 @@ export const Footer = () => {
         </ul>
         <ul>
             <li className='heading'>Follow</li>
-            <li><FaSquareWhatsapp /></li>
-            <li> <FaSquareInstagram /></li>
-            <li><FaYoutube /></li>
-            <li><FaTwitter /></li>
+            <li>
+               <span><FaSquareWhatsapp /></span> 
+               <span><FaSquareInstagram /></span> 
+            </li>
+            <li>
+                <span><FaYoutube /></span>
+                <span><FaTwitter /></span>
+            </li>
         </ul>
 
     </div>
