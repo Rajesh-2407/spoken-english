@@ -1,5 +1,5 @@
 import React from 'react'
-// import { FaPhone } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
@@ -25,7 +25,7 @@ export const Footer = () => {
         </ul>
         <ul>
             <li className='heading'>Contact us</li>
-            <li><a href=''>+91 6380683086</a></li>
+            <li><a href=''><FaPhone />+91 6380683086</a></li>
             <li>sales@thisaitech.com</li>
         </ul>
         <ul>
