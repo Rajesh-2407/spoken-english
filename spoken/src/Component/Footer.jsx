@@ -1,4 +1,9 @@
 import React from 'react'
+import { FaPhone } from "react-icons/fa6";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
@@ -19,15 +24,15 @@ export const Footer = () => {
         </ul>
         <ul>
             <li className='heading'>Contact us</li>
-            <li><a href=''></a></li>
-            <li> nmgiuw</li>
-            <li>jgwiury</li>
+            <li><a href=''><FaPhone />+91 6380683086</a></li>
+            <li>sales@thisaitech.com</li>
         </ul>
         <ul>
-            <li className='heading'> bmc</li>
-            <li>123</li>
-            <li> nmgiuw</li>
-            <li>jgwiury</li>
+            <li className='heading'>Follow</li>
+            <li><FaSquareWhatsapp /></li>
+            <li> <FaSquareInstagram /></li>
+            <li><FaYoutube /></li>
+            <li><FaTwitter /></li>
         </ul>
 
     </div>
