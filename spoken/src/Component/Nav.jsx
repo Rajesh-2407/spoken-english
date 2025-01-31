@@ -4,6 +4,8 @@ import './nav.css'
 import { IoMdMenu } from "react-icons/io";
 
 export const Nav = () => {
+  
+  
     return (
         <>
             <div className="navbar">
@@ -16,16 +18,20 @@ export const Nav = () => {
                         <li className='nav-li'><a href="">Home</a></li>
                         <li className='nav-li'><a href="">Components</a></li>
                         <li className='nav-li'><a href="">Chat</a></li>
-                        <li className='nav-li'><a href="#footer">Contact</a></li>
+                        <li className='nav-li'><a href="">Contact</a></li>
                     </ul>
                 </div>
                 <div className="navbutton">
                     <button className='nav-btn'><a href="">Sign In</a></button>
                 </div>
-                <div className="open-btn"><IoMdMenu /></div>
+                <div id='menu-bar' ><IoMdMenu/></div>
+               
             </div>
+         
+      
             
-           
+            
+              
         </>
     )
 }
