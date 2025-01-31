@@ -12,8 +12,8 @@
     padding: 10px;
 }
 ul{
-height: 200px;
 width: 250px;
+height: 200px;
 border: 1px solid black;
 }
 li{
@@ -22,4 +22,9 @@ li{
 .heading{
     color: darkgoldenrod;
     font-size: 25px;
+}
+span{
+    font-size: 30px;
+    color: red;
+    gap: 4px 10px;
 }
