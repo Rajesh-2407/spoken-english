@@ -77,22 +77,25 @@
     color: #ffffff;
   }
   
-  .nav-btn:hover {
+  .nav-btn:hover  {
     color: #ffffff;
     border: 1px solid blueviolet;
+  }
+  .nav-btn:hover a{
+    color: #ffffff;
+    transition: 0.5s;
   }
   
   .nav-btn:hover:before {
     top: -35%;
     background-color: blueviolet;
-    color: #ffffff;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
   
   .nav-btn:hover:after {
     top: -45%;
-    color: #ffffff;
     background-color:blueviolet;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
+  
   

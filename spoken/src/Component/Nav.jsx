@@ -1,6 +1,8 @@
 import React from 'react'
 import './nav.css'
 
+import { IoMdMenu } from "react-icons/io";
+
 export const Nav = () => {
     return (
         <>
@@ -20,7 +22,10 @@ export const Nav = () => {
                 <div className="navbutton">
                     <button className='nav-btn'><a href="">Sign In</a></button>
                 </div>
+                <div className="open-btn"><IoMdMenu /></div>
             </div>
+            
+           
         </>
     )
 }
