@@ -3,6 +3,7 @@ import { FaPhone } from "react-icons/fa6";
 import { FaSquareWhatsapp } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
 import { FaTwitter } from "react-icons/fa6";
 import './Footer.css'
 
@@ -25,20 +26,22 @@ export const Footer = () => {
         </ul>
         <ul className='foot-ul'>
             <li className='heading'>Contact us</li>
-            <li><a href=''><FaPhone />+91 6380683086</a></li>
-            <li><a href=''>sales@thisaitech.com</a></li>
+            <li><a href='sms:+916380683086'><FaPhone />&nbsp; &nbsp; +91 6380683086</a></li>
+            <li><a href='mailto:sales@thisaitech.com?subject=hello!'><CiMail />&nbsp; &nbsp; sales@thisaitech.com</a></li>
         </ul>
         <ul className='foot-ul'>
             <li className='heading'>Follow</li>
             <div className='icon'>
-            <li className='icon-one'>
-               <span className='wa'><FaSquareWhatsapp /></span> 
-               <span className='insta'><FaSquareInstagram /></span> 
-            </li>
-            <li className='icon-two'>
-                <span className="yt"><FaYoutube /></span>
+                
+               <span className='wa'><a href="https://wa.me/916380683086"><FaSquareWhatsapp /></a></span>
+
+               <span className='insta'><a href='https://www.instagram.com/thisaibook/'><FaSquareInstagram /></a>
+               </span> 
+
+
+                <span className="yt"><a href="https://www.youtube.com/@ThisAI_Groups"><FaYoutube /></a></span>
                 <span className="tw"><FaTwitter /></span>
-            </li>
+
             </div>
         </ul>
 

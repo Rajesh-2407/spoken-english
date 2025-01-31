@@ -2,54 +2,68 @@
 .footer{
     width: 100vw;
     font-family: "Poppins", serif;
-    background-color:grey;
-    color: white;
+    background-color:pink;
+    color:black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: start;
     gap: 10px;
-    padding: 10px;
+    padding: 20px 10px;
 }
 .foot-ul{
    width: 250px;
    height: 120px;
-   border: 1px solid black;
 }
 li{
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: white;
+    color:black;
 }
 .heading{
-    color: darkgoldenrod;
+    color: blueviolet;
     font-size: 25px;
+}
+span{
+    height: 60px;
+    width: 70px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .icon{
     display: flex;
-    flex-direction: column;
-    font-size: 30px;
+    gap: 15px;
+    font-size: 35px;
 }
-.icon-one{
-    display: flex;
-    gap: 5px 20px;
+
+.icon .wa {
+    background-color: white;
 }
-.icon-two{
-    display: flex;
-    gap: 5px 20px;
-}
-.icon-one .wa{
+.icon .wa a{
     color: green;
+    margin-top: 8px;/*alignitem not working so center*/
 }
-.icon-one .insta{
-    color: orangered;
+.icon .insta {
+    background-color: white;
 }
-.icon-two .yt{
+.icon .insta a{
+    color: orangered; 
+     margin-top: 8px;
+
+}
+.icon .yt{
+    background-color: white;
+}
+.icon .yt a{
     color: red;
+    margin-top: 8px;
 }
-.icon-two .tw{
+.icon .tw {
     color: blue;
+    background-color: white;
 }
