@@ -13,7 +13,7 @@
 }
 ul{
 width: 250px;
-padding: 10px;
+height: 200px;
 border: 1px solid black;
 }
 li{
@@ -26,4 +26,5 @@ li{
 span{
     font-size: 30px;
     color: red;
+    gap: 4px 10px;
 }
