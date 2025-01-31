@@ -25,19 +25,19 @@ export const Footer = () => {
         </ul>
         <ul className='foot-ul'>
             <li className='heading'>Contact us</li>
-            <li><a href=''>&nbsp<FaPhone />+91 6380683086</a></li>
+            <li><a href=''><FaPhone />+91 6380683086</a></li>
             <li><a href=''>sales@thisaitech.com</a></li>
         </ul>
         <ul className='foot-ul'>
             <li className='heading'>Follow</li>
             <div className='icon'>
             <li className='icon-one'>
-               <span><FaSquareWhatsapp /></span> 
-               <span><FaSquareInstagram /></span> 
+               <span className='wa'><FaSquareWhatsapp /></span> 
+               <span className='insta'><FaSquareInstagram /></span> 
             </li>
             <li className='icon-two'>
-                <span><FaYoutube /></span>
-                <span><FaTwitter /></span>
+                <span className="yt"><FaYoutube /></span>
+                <span className="tw"><FaTwitter /></span>
             </li>
             </div>
         </ul>

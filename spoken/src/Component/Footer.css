@@ -20,6 +20,10 @@
 li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 .heading{
     color: darkgoldenrod;
     font-size: 25px;
@@ -27,6 +31,7 @@ li{
 .icon{
     display: flex;
     flex-direction: column;
+    font-size: 30px;
 }
 .icon-one{
     display: flex;
@@ -36,18 +41,15 @@ li{
     display: flex;
     gap: 5px 20px;
 }
-span{
-    font-size: 30px;
-}
-.wa{
+.icon-one .wa{
     color: green;
 }
-.insta{
+.icon-one .insta{
     color: orangered;
 }
-.yt{
+.icon-two .yt{
     color: red;
 }
-.tw{
+.icon-two .tw{
     color: blue;
 }
