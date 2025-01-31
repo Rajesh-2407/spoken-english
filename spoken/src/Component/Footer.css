@@ -1,6 +1,7 @@
 .footer{
     width: 100vw;
     height: 400px;
+    font-family: "Poppins", serif;
     background-color:grey;
     color: white;
     display: flex;
@@ -19,4 +20,8 @@ ul{
 }
 li{
     list-style: none;
+}
+.heading{
+    color: darkgoldenrod;
+    font-size: 25px;
 }
