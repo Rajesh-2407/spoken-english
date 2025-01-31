@@ -18,16 +18,19 @@
     display: flex;
     gap: 20px;
 }
-.nav-li a{
+
+.nav-li a {
     color: rgba(27, 19, 19, 0.842);
     font-weight: 500;
     transition: 0.5s;
 }
-.nav-li a:hover{
+
+.nav-li a:hover {
     color: blueviolet;
 }
-.nav-btn a{
-   color: rgba(27, 19, 19, 0.842);
+
+.nav-btn a {
+    color: rgba(27, 19, 19, 0.842);
 }
 
 
@@ -43,10 +46,10 @@
     cursor: pointer;
     background-color: pink;
     z-index: 1;
-    
-  }
-  
-  .nav-btn:before {
+
+}
+
+.nav-btn:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -59,9 +62,9 @@
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
-  }
-  
-  .nav-btm:after {
+}
+
+.nav-btm:after {
     content: "";
     position: absolute;
     left: 55%;
@@ -69,33 +72,97 @@
     top: 180%;
     width: 160%;
     height: 190%;
-    background-color:blueviolet;
+    background-color: blueviolet;
     border-radius: 50%;
     display: block;
     transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
     z-index: -1;
     color: #ffffff;
-  }
-  
-  .nav-btn:hover  {
+}
+
+.nav-btn:hover {
     color: #ffffff;
     border: 1px solid blueviolet;
-  }
-  .nav-btn:hover a{
+}
+
+.nav-btn:hover a {
     color: #ffffff;
     transition: 0.5s;
-  }
-  
-  .nav-btn:hover:before {
+}
+
+.nav-btn:hover:before {
     top: -35%;
     background-color: blueviolet;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
-  
-  .nav-btn:hover:after {
+}
+
+.nav-btn:hover:after {
     top: -45%;
-    background-color:blueviolet;
+    background-color: blueviolet;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
+}
+#menu-bar{
+    display: none;
+}
+
+/* .menu{
+    top: 0;
+    right: 100%;
+    z-index: 99;
+    background-color: aliceblue;
+    width: 400px;
+}
+#menu-active{
+   right: 0;
+   top: 0;
+   position: absolute;
+   width: 400px;
+   height: 100vh;
+   background-color: #ffffff;
+   z-index: 99;
   
-  
+}
+.menu-active  .menu-heading{
+    padding: 30px;
+    text-align: center;
+    background-color: #4f4f4f;
+}
+.menu-item  ul li{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom:1px solid #4f4f4f;
+}
+#menu-close{
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    right: 0;
+    padding: 10px;
+
+} */
+
+/* Mobile devices (small screens) */
+@media (max-width: 599px) {
+    .navlist {
+        display: none;
+    }
+
+    .navbutton {
+        display: none;
+    }
+    .open-btn{
+        display: block;
+    }
+
+}
+
+/* Tablets (portrait & landscape) */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+}
+
+/* Laptops & Desktops */
+@media (min-width: 1025px) {
+
+}
