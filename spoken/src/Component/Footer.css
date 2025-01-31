@@ -5,12 +5,14 @@
     color: white;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    /* gap: 20px; */
+    text-align: start;
+    gap: 10px;
 }
 ul{
     padding: 10px;
+    text-align: left;
 }
 li{
     list-style: none;
