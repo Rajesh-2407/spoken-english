@@ -1,5 +1,14 @@
 .footer{
     width: 100vw;
     height: 400px;
-    background-color: rgb(65, 55, 55);
+    background-color:grey;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+li{
+    list-style: none;
 }
