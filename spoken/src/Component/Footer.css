@@ -34,7 +34,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    overflow: hidden;
 }
 .icon{
     display: flex;
