@@ -283,6 +283,7 @@ button {
     }
     .nav-active{
         display: none;
+        
     }
 }
 
