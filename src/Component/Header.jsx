@@ -16,7 +16,7 @@ const Header = () => {
 
         <div className="img-box">
           <img src="head.png" alt="" />
-          <h1>Spoken English</h1>
+          <h1>Spoken english</h1>
         </div>
 
         </div>
