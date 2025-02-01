@@ -34,7 +34,11 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< HEAD
     
+=======
+    overflow: hidden;
+>>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
 }
 .icon{
     display: flex;
@@ -53,7 +57,11 @@ span{
     background-color: white;
 }
 .icon .insta a{
+<<<<<<< HEAD
     color: orangered; 
+=======
+    color:  rgb(249, 88, 13); 
+>>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
      margin-top: 8px;
 
 }
@@ -80,4 +88,23 @@ span{
 .icon .yt a:hover{
     color: white;
     transition: 0.5s;
+<<<<<<< HEAD
+=======
+}
+.icon .insta:hover{
+    background-color: rgb(249, 88, 13); 
+    transition: 0.5s;
+}
+.icon .insta a:hover{
+    color: white;
+    transition: 0.5s;
+}
+.icon .wa:hover {
+    background-color: green;
+    transition: 0.5s;
+}
+.icon .wa a:hover{
+    color:white;
+    transition: 0.5s;
+>>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
 }
