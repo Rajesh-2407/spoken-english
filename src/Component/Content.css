@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+
+}
+.head-contant
+{
+    /* height: 400px; */
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color:  #291A40;;
+    
+   
+    
+}
+/* @media (max-width:400px) {
+
+    .head-contant
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px
+        ;
+    }
+    
+} */
+.head-tittle
+{
+height: 360px;
+width: 350px;
+/* border: 1px solid black; */
+
+position: relative;
+
+}
+
+.head-tittle-h1{
+    color:blueviolet;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 40px;
+    /* color: #B6B6B6; */
+
+
+}
+.head-tittle-p{
+    
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    font-size: 20px;
+    color: #e8e8e8;
+    width: 300px;
+
+    
+}
+.img-box
+{
+    height: 500px;
+    width: 400px;
+    /* border: 1px solid black; */
+    position: relative;
+    align-items: center;
+}
+.img-box img{
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+}
+/* From Uiverse.io by alexroumi */ 
+.head-btn {
+    position: absolute;
+    top: 290px;
+    left: 30px;
+    padding: 12px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    border: 1px solid blueviolet;
+   }
+   
+   .head-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color:blueviolet;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 0.5s;
+
+   }
+   
+   .head-btn:hover {
+    color: #e8e8e8;
+    
+   }
+   
+   .head-btn:hover::before {
+    width: 100%;
+   }
