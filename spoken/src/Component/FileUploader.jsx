@@ -2,131 +2,133 @@ import React, { useState } from "react";
 import "./FileUploader.css"; // Import CSS file
 
 const FileUploader = () => {
-  const [file, setFile] = useState(null);
-  const [previewUrl, setPreviewUrl] = useState(null);
-  const [showUploadBox, setShowUploadBox] = useState(false); // Show/Hide Upload Box
-  const [uploading, setUploading] = useState(false);
-  const [progress, setProgress] = useState(0);
+    const [file, setFile] = useState(null);
+    const [previewUrl, setPreviewUrl] = useState(null);
+    const [showUploadBox, setShowUploadBox] = useState(false); // Show/Hide Upload Box
+    const [uploading, setUploading] = useState(false);
+    const [progress, setProgress] = useState(0);
 
-  const handleFileChange = (e) => {
-    const selectedFile = e.target.files[0];
-    if (!selectedFile) return;
+    const handleUpload = () => {
+        if (!file) return;
+        setUploading(true);
+        setProgress(0);
+        const interval = setInterval(() => {
+            setProgress((prev) => {
+                if (prev >= 100) {
+                    clearInterval(interval);
+                     setUploading(false);
+                      setShowUploadBox(false);
+                       setFile(null); 
+                        setPreviewUrl(null); 
+               return 100; }
+                return prev + 10; });
+             }, 300);
+             };
+ 
 
-    setFile(selectedFile);
-    
-    // Create preview URL
-    const url = URL.createObjectURL(selectedFile);
-    setPreviewUrl(url);
-  };
+                    const handleFileChange = (e) => {
+                        const selectedFile = e.target.files[0];
+                        if (!selectedFile) return;
 
-  const handlePreview = () => {
-    if (previewUrl) {
-      window.open(previewUrl, "_blank"); // Opens file preview in a new tab
-    }
-  };
+                        setFile(selectedFile);
 
-  const handleRemoveFile = () => {
-    setFile(null);
-    setPreviewUrl(null);
-    setUploading(false);
-    setProgress(0);
-  };
+                        // Create preview URL
+                        const url = URL.createObjectURL(selectedFile);
+                        setPreviewUrl(url);
+                    };
 
-  const handleUpload = () => {
-    if (!file) return;
-    
-    setUploading(true);
-    setProgress(0);
+                    const handlePreview = () => {
+                        if (previewUrl) {
+                            window.open(previewUrl, "_blank"); // Opens file preview in a new tab
+                        }
+                    };
 
-    // Simulate upload process
-    const interval = setInterval(() => {
-      setProgress((prev) => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          setUploading(false);
-          return 100;
-        }
-        return prev + 10;
-      });
-    }, 500);
-  };
+                    const handleRemoveFile = () => {
+                        setFile(null);
+                        setPreviewUrl(null);
+                        setUploading(false);
+                        setProgress(0);
+                    };
 
-  const handleDrop = (e) => {
-    e.preventDefault();
-    const droppedFile = e.dataTransfer.files[0];
-    if (droppedFile) {
-      setFile(droppedFile);
-      setPreviewUrl(URL.createObjectURL(droppedFile));
-    }
-  };
 
-  return (
-    <div className="container">
-      {/* Show Upload Box Button */}
-      <button className="upload-btn" onClick={() => setShowUploadBox(true)}>
-        Upload File
-      </button>
+                    const handleDrop = (e) => {
+                        e.preventDefault();
+                        const droppedFile = e.dataTransfer.files[0];
+                        if (droppedFile) {
+                            setFile(droppedFile);
+                            setPreviewUrl(URL.createObjectURL(droppedFile));
+                        }
+                    };
 
-      {/* Upload Box (Shown only when showUploadBox is true) */}
-      {showUploadBox && (
-        <div className="upload-box">
-          <div className="upload-header">
-            <h3>Upload File</h3>
-            <button className="close-btn" onClick={() => setShowUploadBox(false)}>✖</button>
-          </div>
+                    return (
+                        <div className="container">
+                            <div className="cont">
+                            {/* Show Upload Box Button */}
+                            <button className="upload-btn" onClick={() => setShowUploadBox(true)}>
+                                Upload File
+                            </button>
+                        </div>
 
-          <div 
-            className="drop-area"
-            onDragOver={(e) => e.preventDefault()}
-            onDrop={handleDrop}
-          >
-            Drag & Drop files here or  
-            <input type="file" onChange={handleFileChange} className="file-input" />
-          </div>
+                            {/* Upload Box (Shown only when showUploadBox is true) */}
+                            {showUploadBox && (
+                                <div className="upload-box">
+                                    <div className="upload-header">
+                                        <h3>Upload File</h3>
+                                        <button className="close-btn" onClick={() => setShowUploadBox(false)}>✖</button>
+                                    </div>
 
-          {file && (
-            <div className="file-details">
-              <p>
-                <strong>Name:</strong>{" "}
-                <span className="file-link" onClick={handlePreview}>
-                  {file.name}
-                </span>
-              </p>
-              <p><strong>Size:</strong> {(file.size / 1024).toFixed(2)} KB</p>
+                                    <div
+                                        className="drop-area"
+                                        onDragOver={(e) => e.preventDefault()}
+                                        onDrop={handleDrop}
+                                    >
+                                        Drag & Drop files here or
+                                        <input type="file" onChange={handleFileChange} className="file-input" />
+                                    </div>
 
-              {/* Image Preview */}
-              {previewUrl && file.type.startsWith("image/") && (
-                <img src={previewUrl} alt="Preview" className="file-preview" />
-              )}
+                                    {file && (
+                                        <div className="file-details">
+                                            <p>
+                                                <strong>Name:</strong>{" "}
+                                                <span className="file-link" onClick={handlePreview}>
+                                                    {file.name}
+                                                </span>
+                                            </p>
+                                            <p><strong>Size:</strong> {(file.size / 1024).toFixed(2)} KB</p>
 
-              {/* PDF Preview */}
-              {previewUrl && file.type === "application/pdf" && (
-                <embed src={previewUrl} type="application/pdf" width="100%" height="200px" />
-              )}
+                                            {/* Image Preview */}
+                                            {previewUrl && file.type.startsWith("image/") && (
+                                                <img src={previewUrl} alt="Preview" className="file-preview" />
+                                            )}
 
-              {/* Upload Button */}
-              {!uploading ? (
-                <button className="upload-btn" onClick={handleUpload}>
-                  Upload File
-                </button>
-              ) : (
-                <div className="progress-bar">
-                  <div className="progress" style={{ width: `${progress}%` }}>
-                    {progress}%
-                  </div>
-                </div>
-              )}
+                                            {/* PDF Preview */}
+                                            {previewUrl && file.type === "application/pdf" && (
+                                                <embed src={previewUrl} type="application/pdf" width="100%" height="200px" />
+                                            )}
+                                            <br/>
+                                            {/* Upload Button */}
+                                            {!uploading ? (
+                                                <button className="upload-btn" onClick={handleUpload}>
+                                                    Upload File
+                                                </button>
+                                            ) : (
+                                                <div className="progress-bar">
+                                                    <div className="progress" style={{ width: `${progress}%` }}>
+                                                        {progress}%
+                                                    </div>
+                                                </div>
+                                            )}
+                                            &nbsp;
+                                            {/* Remove File Button */}
+                                            <button className="remove-btn" onClick={handleRemoveFile}>
+                                                Remove File
+                                            </button>
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+                        </div>
+                    );
+                };
 
-              {/* Remove File Button */}
-              <button className="remove-btn" onClick={handleRemoveFile}>
-                Remove File
-              </button>
-            </div>
-          )}
-        </div>
-      )}
-    </div>
-  );
-};
-
-export default FileUploader;
+                export default FileUploader;
