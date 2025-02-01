@@ -15,7 +15,7 @@ const Header = () => {
         </div>
 
         <div className="img-box">
-          <img src="head.png" alt="" />
+          <img src="react.svg" alt="" />
           <h1>Spoken English</h1>
         </div>
 
