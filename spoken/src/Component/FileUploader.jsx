@@ -22,7 +22,7 @@ const FileUploader = () => {
                         setPreviewUrl(null); 
                return 100; }
                 return prev + 10; });
-             }, 500);
+             }, 300);
              };
  
 
@@ -50,24 +50,6 @@ const FileUploader = () => {
                         setProgress(0);
                     };
 
-                    // const handleUpload = () => {
-                    //     if (!file) return;
-
-                    //     setUploading(true);
-                    //     setProgress(0);
-
-                    //     Simulate upload process
-                    //     const interval = setInterval(() => {
-                    //         setProgress((prev) => {
-                    //             if (prev >= 100) {
-                    //                 clearInterval(interval);
-                    //                 setUploading(false);
-                    //                 return 100;
-                    //             }
-                    //             return prev + 10;
-                    //         });
-                    //     }, 500);
-                    // };
 
                     const handleDrop = (e) => {
                         e.preventDefault();
@@ -80,10 +62,12 @@ const FileUploader = () => {
 
                     return (
                         <div className="container">
+                            <div className="cont">
                             {/* Show Upload Box Button */}
                             <button className="upload-btn" onClick={() => setShowUploadBox(true)}>
                                 Upload File
                             </button>
+                        </div>
 
                             {/* Upload Box (Shown only when showUploadBox is true) */}
                             {showUploadBox && (
@@ -121,7 +105,7 @@ const FileUploader = () => {
                                             {previewUrl && file.type === "application/pdf" && (
                                                 <embed src={previewUrl} type="application/pdf" width="100%" height="200px" />
                                             )}
-
+                                            <br/>
                                             {/* Upload Button */}
                                             {!uploading ? (
                                                 <button className="upload-btn" onClick={handleUpload}>
@@ -134,7 +118,7 @@ const FileUploader = () => {
                                                     </div>
                                                 </div>
                                             )}
-
+                                            &nbsp;
                                             {/* Remove File Button */}
                                             <button className="remove-btn" onClick={handleRemoveFile}>
                                                 Remove File
