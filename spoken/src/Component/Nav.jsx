@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './nav.css'
-
+import { IoMdClose } from "react-icons/io";
 import { IoMdMenu } from "react-icons/io";
 
 export const Nav = () => {
@@ -11,7 +11,7 @@ export const Nav = () => {
     return (
         <>
             <div className="navbar">
-                <div className="navlogo">
+                <div className={`navlogo ${isCartActive ? 'nav-active' : ''}`}>
                     <h2>ThisAI</h2>
                     <h4>spoken English</h4>
                 </div>
@@ -44,8 +44,9 @@ export const Nav = () => {
                             <li><a href="">Components</a></li>
                             <li><a href="">Chat</a></li>
                             <li><a href="">Contact</a></li>
+                            <li className='button'><a href="">Sign In</a></li>
                         </ul>
-                        <button className='btn-menuclose' onClick={() => setIsCartActive(false)}>Close</button>
+                        <button className='btn-menuclose' onClick={() => setIsCartActive(false)}><IoMdClose /></button>
                     </div>
                     
                 </div>
