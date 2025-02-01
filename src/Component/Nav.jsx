@@ -1,13 +1,22 @@
+<<<<<<< HEAD
+import React from 'react'
+=======
 import React, { useState } from 'react'
+>>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
 import './nav.css'
 
 import { IoMdMenu } from "react-icons/io";
 
 export const Nav = () => {
+<<<<<<< HEAD
+  
+  
+=======
     const [isCartActive, setIsCartActive] = useState(false);
 
 
 
+>>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
     return (
         <>
             <div className="navbar">
@@ -26,6 +35,16 @@ export const Nav = () => {
                 <div className="navbutton">
                     <button className='nav-btn'><a href="">Sign In</a></button>
                 </div>
+<<<<<<< HEAD
+                <div id='menu-bar' ><IoMdMenu/></div>
+               
+            </div>
+         
+      
+            
+            
+              
+=======
              
                 <button
                     className="cart-icon"
@@ -61,6 +80,7 @@ export const Nav = () => {
 
 
 
+>>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
         </>
     )
 }
