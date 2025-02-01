@@ -1,0 +1,83 @@
+
+.footer{
+    width: 100vw;
+    font-family: "Poppins", serif;
+    background-color:#291A40;
+    color:black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+}
+.foot-ul{
+   width: 250px;
+   height: 120px;
+}
+li{
+    list-style: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.heading{
+    color: blueviolet;
+    font-size: 25px;
+}
+span{
+    height: 60px;
+    width: 70px;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon{
+    display: flex;
+    gap: 15px;
+    font-size: 35px;
+}
+
+.icon .wa {
+    background-color: white;
+}
+.icon .wa a{
+    color: green;
+    margin-top: 8px;/*alignitem not working so center*/
+}
+.icon .insta {
+    background-color: white;
+}
+.icon .insta a{
+    color: orangered; 
+     margin-top: 8px;
+
+}
+.icon .yt{
+    background-color: white;
+}
+.icon .yt a{
+    color: red;
+    margin-top: 8px;
+}
+.icon .tw {
+    color: blue;
+    background-color: white;
+}
+.tw:hover{
+    color: white;
+    background-color: blue;
+    transition: 0.5s;
+}
+.icon .yt:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.icon .yt a:hover{
+    color: white;
+    transition: 0.5s;
+}
