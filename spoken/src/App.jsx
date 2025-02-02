@@ -3,7 +3,8 @@ import './App.css'
 import FileUploader from './Component/FileUploader'
 import { Footer } from './Component/Footer'
 import { Nav } from './Component/Nav'
-import { Router,Route } from 'react-router-dom'
+
+import Otp from './Component/Otp'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <>
         <Nav/>
         <FileUploader/>
+        <Otp/>
         <Footer />
         
     </>
