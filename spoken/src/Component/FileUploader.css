@@ -14,7 +14,7 @@
     border-radius: 20px;
     position: absolute;
     top: 70px;
-    left: 120px;
+    left: 250px;
 }
 .upload-btn{
     background-color: rgb(112, 112, 243);
@@ -81,7 +81,23 @@
     border-radius: 5px;
    
   }
+  .image{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+   top: 50px;
+   right: 200px;
+   overflow: hidden;
+  }
+  .image img{
+    width: 100%;
+    height: 95%;
+  }
+
   @media (max-width:400px) {
+    .container{
+        height: 680px;
+    }
     .cont{
         position:absolute;
         top: 30px;
@@ -96,6 +112,11 @@
         border-radius: 10px;
         width: 300px;
         z-index: 1000;
+      }
+      .image{
+        position: absolute;
+        top: 330px;
+        left: 30px;
       }
 
   }
