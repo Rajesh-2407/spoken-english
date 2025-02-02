@@ -23,7 +23,7 @@ export const Nav = () => {
                     <ul className='nav-ul'>
                         <li className='nav-li'><a href="">Home</a></li>
                         <li className='nav-li'><a href="">Upload File</a></li>
-                        <li className='nav-li'><a href="">Chat</a></li>
+                       <li className='nav-li'><a href="">Chat</a></li>
                         <li className='nav-li'><a href="">Contact</a></li>
                     </ul>
                 </div>
