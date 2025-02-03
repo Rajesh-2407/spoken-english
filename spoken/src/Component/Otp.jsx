@@ -67,7 +67,7 @@ const Otp = () => {
 
     return (
         <>
-            <div className="otp-page">
+            <div className="otp-page" id="sign-in">
                 <div id="recaptcha-container"></div>
                 {user ? (
                     <div>

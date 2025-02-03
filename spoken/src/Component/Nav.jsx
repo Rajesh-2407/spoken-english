@@ -6,10 +6,12 @@ import { FaHome } from "react-icons/fa";
 import { IoChatbubbles } from "react-icons/io5";
 import { FaFileUpload } from "react-icons/fa";
 import { MdContacts } from "react-icons/md";
+import { Link } from 'react-router-dom';  
+
 
 export const Nav = () => {
     const [isCartActive, setIsCartActive] = useState(false);
-
+    
 
 
     return (
@@ -21,14 +23,14 @@ export const Nav = () => {
                 </div>
                 <div className="navlist">
                     <ul className='nav-ul'>
-                        <li className='nav-li'><a href="">Home</a></li>
-                        <li className='nav-li'><a href="">Upload File</a></li>
-                       <li className='nav-li'><a href="">Chat</a></li>
-                        <li className='nav-li'><a href="">Contact</a></li>
+                    <li className='nav-li'> <Link to='/'>Home</Link></li>
+                    <li className='nav-li'><a href="#fileupload">Upload File</a></li>
+                    <li className='nav-li'><a href="">Chat</a></li>
+                    <li className='nav-li'><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div className="navbutton">
-                    <button className='nav-btn'><a href="">Sign In</a></button>
+                <button className='nav-btn'><Link to="/Otp">Sign In</Link> </button>
                 </div>
 
                 <button
@@ -45,10 +47,10 @@ export const Nav = () => {
 
                     <ul className='menu-item'>
                         <li><a href=""><FaHome />&nbsp; Home</a></li>
-                        <li><a href=""><FaFileUpload />&nbsp; File Upload</a></li>
+                        <li><a href="#fileupload"><FaFileUpload />&nbsp; File Upload</a></li>
                         <li><a href=""><IoChatbubbles />&nbsp; Chat</a></li>
-                        <li><a href=""><MdContacts />&nbsp; Contact</a></li>
-                        <li className='button'><a href="">Sign In</a></li>
+                        <li><a href="#contact"><MdContacts />&nbsp; Contact</a></li>
+                        <li className='button'><Link to='/otp'>Sign In</Link></li>
                     </ul>
                     <button className='btn-menuclose' onClick={() => setIsCartActive(false)}><IoMdClose /></button>
                 </div>
