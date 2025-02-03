@@ -10,10 +10,11 @@
 .heading{
     padding: 10px;
 }
-.icon{
+.icon-mob{
     background-color: antiquewhite;
-    margin-left: 130px;
+    margin-left: 110px;
     border-radius: 50%;
+    font-size: 30px;
     
 }
 

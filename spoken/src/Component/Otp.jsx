@@ -78,7 +78,7 @@ const Otp = () => {
                         <h1 className="heading">Welcome to <br /> ThisAI Spoken English</h1>
                         {showOTP ? (
                             <>
-                                <span className="icon"><BsFillShieldLockFill /></span>
+                                <span className="icon-mob"><BsFillShieldLockFill /></span>
                                 <label htmlFor="otp">Enter OTP</label>
                                 <OtpInput
                                     value={otp}
@@ -94,7 +94,7 @@ const Otp = () => {
                             </>
                         ) : (
                             <>
-                                <span className="icon"><BsFillTelephoneFill /></span>
+                                <span className="icon-mob"><BsFillTelephoneFill /></span>
                                 <label htmlFor="">Verify Your Phone Number</label>
                                 <PhoneInput country={"in"} value={ph} onChange={setPh} />
                                 <button onClick={onSignup} className="otp-submit">
