@@ -35,10 +35,14 @@ span{
     justify-content: center;
     align-items: center;
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
     overflow: hidden;
 >>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
+=======
+    overflow: hidden;
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
 }
 .icon{
     display: flex;
@@ -58,10 +62,14 @@ span{
 }
 .icon .insta a{
 <<<<<<< HEAD
+<<<<<<< HEAD
     color: orangered; 
 =======
     color:  rgb(249, 88, 13); 
 >>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
+=======
+    color:  rgb(249, 88, 13); 
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
      margin-top: 8px;
 
 }
@@ -89,7 +97,10 @@ span{
     color: white;
     transition: 0.5s;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
 }
 .icon .insta:hover{
     background-color: rgb(249, 88, 13); 
@@ -106,5 +117,8 @@ span{
 .icon .wa a:hover{
     color:white;
     transition: 0.5s;
+<<<<<<< HEAD
 >>>>>>> 98743672a4fb1f1f73feb53408577e35381bbd56
+=======
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
 }

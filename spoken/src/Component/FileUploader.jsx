@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import img1 from '../assets/file.png'
 import "./FileUploader.css"; // Import CSS file
 
+
 const FileUploader = () => {
     const [file, setFile] = useState(null);
     const [previewUrl, setPreviewUrl] = useState(null);
@@ -64,8 +65,8 @@ const FileUploader = () => {
     };
 
     return (
-
-        <div className="container">
+       
+        <div className="container" id="fileupload">
             <div className="cont">
                 {/* Show Upload Box Button */}
                 <button className="upload-btn" onClick={() => setShowUploadBox(true)}>
