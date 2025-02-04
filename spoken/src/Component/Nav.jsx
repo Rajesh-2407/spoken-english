@@ -46,7 +46,7 @@ export const Nav = () => {
                     <h2 className='menu-heading'>ThisAI Spoken English</h2>
 
                     <ul className='menu-item'>
-                        <li><a href=""><FaHome />&nbsp; Home</a></li>
+                        <li><Link to='/'><FaHome />&nbsp; Home</Link></li>
                         <li><a href="#fileupload"><FaFileUpload />&nbsp; File Upload</a></li>
                         <li><a href=""><IoChatbubbles />&nbsp; Chat</a></li>
                         <li><a href="#contact"><MdContacts />&nbsp; Contact</a></li>

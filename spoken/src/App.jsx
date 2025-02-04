@@ -9,19 +9,18 @@ import { useLocation } from 'react-router-dom';
 
 function App(){
   const location = useLocation();
+  console.log("Current Path:", location.pathname);
   const isSignInPage = location.pathname === "/otp";
   return (
     <>
-    <Nav/>
+    {!isSignInPage && <Nav />}
     <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} /> 
         <Route path="/otp" element={<Otp/>} />
       </Routes>
-      {!isSignInPage && (
-    <FileUploader/>
-  )}   {!isSignInPage && (
-    <Footer/>
-  )}
+      {!isSignInPage && <FileUploader />}
+      {!isSignInPage && <Footer />}
+  
     
     
     
