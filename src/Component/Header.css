@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", serif;
+
+}
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
 .head-contant
 {
     /* height: 400px; */
@@ -8,7 +17,11 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
+<<<<<<< HEAD
     background-color:  #B6B6B6;
+=======
+    background-color:  #291A40;;
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
     
    
     
@@ -28,8 +41,13 @@
 } */
 .head-tittle
 {
+<<<<<<< HEAD
 height: 300px;
 width: 400px;
+=======
+height: 360px;
+width: 350px;
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
 /* border: 1px solid black; */
 
 position: relative;
@@ -39,8 +57,15 @@ position: relative;
 .head-tittle-h1{
     color:blueviolet;
     position: absolute;
+<<<<<<< HEAD
     top: 50px;
     left: 10px;
+=======
+    top: 20px;
+    left: 30px;
+    font-size: 40px;
+    /* color: #B6B6B6; */
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
 
 
 }
@@ -48,13 +73,22 @@ position: relative;
     
     position: absolute;
     top: 150px;
+<<<<<<< HEAD
     left: 10px;
+=======
+    left: 30px;
+    font-size: 20px;
+    color: #e8e8e8;
+    width: 300px;
+
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
     
 }
 .img-box
 {
     height: 500px;
     width: 400px;
+<<<<<<< HEAD
     border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
@@ -65,12 +99,29 @@ position: relative;
 .img-box img{
     height: 350px;
     width: 350px;
+=======
+    /* border: 1px solid black; */
+    position: relative;
+    align-items: center;
+}
+.img-box img{
+    height: 400px;
+    width: 380px;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
 }
 /* From Uiverse.io by alexroumi */ 
 .head-btn {
     position: absolute;
+<<<<<<< HEAD
     top: 220px;
     left: 10px;
+=======
+    top: 290px;
+    left: 30px;
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
     padding: 12px 25px;
     border: unset;
     border-radius: 15px;
@@ -84,6 +135,10 @@ position: relative;
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     transition: all 250ms;
     overflow: hidden;
+<<<<<<< HEAD
+=======
+    border: 1px solid blueviolet;
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
    }
    
    .head-btn::before {
@@ -98,13 +153,26 @@ position: relative;
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+<<<<<<< HEAD
     transition: all 250ms
+=======
+    transition: all 0.5s;
+
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
    }
    
    .head-btn:hover {
     color: #e8e8e8;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
    }
    
    .head-btn:hover::before {
     width: 100%;
+<<<<<<< HEAD
    }
+=======
+   }
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704

@@ -10,7 +10,11 @@ import './Footer.css'
 export const Footer = () => {
   return (
     <>
+<<<<<<< HEAD
     <div className='footer'>
+=======
+    <div className='footer' id='contact'>
+>>>>>>> 3b270f39bf30f92cd9a282d5b8b6f688cbdb4704
 
         <ul className='foot-ul'>
             <li className='heading'>Address</li>
