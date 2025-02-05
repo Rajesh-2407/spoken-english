@@ -1,4 +1,4 @@
-import { BsFillShieldLockFill } from "react-icons/bs";
+import { BsFillShieldLockFill } from "react-icons/bs"; 
 import { BsFillTelephoneFill } from "react-icons/bs";
 import OtpInput from "otp-input-react";
 import PhoneInput from "react-phone-input-2";
@@ -6,12 +6,9 @@ import "react-phone-input-2/lib/style.css";
 import { useState } from "react";
 import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import { auth } from "./firebase.config";
-
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./otp.css";
-
-
 
 const Otp = () => {
     const [otp, setOtp] = useState("");
@@ -65,6 +62,12 @@ const Otp = () => {
             });
     }
 
+    function handleClose() {
+        setShowOTP(false); // Close OTP view
+        setOtp(""); // Clear OTP input
+        setPh(""); // Clear phone number input
+    }
+
     return (
         <>
             <div className="otp-page" id="sign-in">
@@ -76,6 +79,12 @@ const Otp = () => {
                 ) : (
                     <div className="otp-verification">
                         <h1 className="heading">Welcome to <br /> ThisAI Spoken English</h1>
+
+                        {/* Close Button */}
+                        <button onClick={handleClose} className="close-btn">
+                            close
+                        </button>
+
                         {showOTP ? (
                             <>
                                 <span className="icon-mob"><BsFillShieldLockFill /></span>
